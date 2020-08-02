@@ -122,7 +122,7 @@ tr:hover td {
     background-color: hsl(0, 0%, 90%);
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 740px) {
     body {
         font-size: 0.8rem;
     }
