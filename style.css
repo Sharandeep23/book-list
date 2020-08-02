@@ -13,9 +13,18 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+section {
+    margin: 2rem 0;
+}
+
 .container {
-    width: 600px;
+    width: 700px;
     margin: 0 auto;
+}
+
+/* Utility Classes */
+.display-none {
+    display: none;
 }
 
 h1 {
@@ -31,7 +40,7 @@ h1 {
 /* Form */
 
 label {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .input {
@@ -69,4 +78,58 @@ label {
 .btn:hover,
 .btn:focus {
     background-color: hsl(197, 100%, 40%);
+}
+
+/* Table */
+
+.table {
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.table-title {
+    width: 40%;
+}
+.table-author {
+    width: 40%;
+}
+td,
+th {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+td {
+    text-align: center;
+    font-weight: 400;
+}
+
+tr:nth-child(even) td {
+    background-color: hsl(0, 0%, 96%);
+}
+
+tr:nth-child(odd) td {
+    background-color: hsl(0, 0%, 98%);
+}
+
+tr:hover td {
+    background-color: hsl(0, 0%, 90%);
+}
+
+@media screen and (max-width: 415px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .container {
+        width: 300px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
 }

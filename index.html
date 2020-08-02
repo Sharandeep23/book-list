@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Book List App</title>
+        <title>Book List Application</title>
 
         <!-- kit's code here -->
         <script
@@ -19,6 +19,8 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
             rel="stylesheet"
         />
+
+        <link rel="shortcut icon" href="favicon.png" />
     </head>
     <body>
         <div class="container">
@@ -29,25 +31,35 @@
             </header>
 
             <main>
-                <section class="form-section">
-                    <form class="form" action="" autocomplete="off">
+                <section>
+                    <form method="POST">
                         <label for="title">Title</label>
-                        <input name="title" class="input" type="text" id="title" />
+                        <input class="input" type="text" id="title" required />
 
                         <label for="author">Author</label>
-                        <input name="author" class="input" type="email" id="author" />
+                        <input class="input" type="text" id="author" required />
 
                         <label for="year">Year</label>
-                        <input
-                            type="number"
-                            class="input"
-                            id="year"
-                            name="year"
-                            max="2020"
-                        />
 
-                        <button class="btn">Add Book</button>
+                        <!-- I'm forced to use input as "text" instead of "number"
+                        because number doesn't support bengali numbers! -->
+                        <input type="text" class="input" id="year" required />
+
+                        <input type="submit" value="Add Book" class="btn" />
                     </form>
+                </section>
+
+                <section>
+                    <table class="table display-none">
+                        <thead>
+                            <tr>
+                                <th class="table-title">Title</th>
+                                <th class="table-author">Author</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
                 </section>
             </main>
         </div>
