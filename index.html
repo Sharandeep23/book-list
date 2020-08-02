@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Book List App</title>
+
+        <!-- kit's code here -->
+        <script
+            src="https://kit.fontawesome.com/f6f0550bc4.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Custom font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>
+                    <span class="title"><i class="fas fa-book"></i> Book</span>List
+                </h1>
+            </header>
+
+            <main>
+                <section class="form-section">
+                    <form class="form" action="" autocomplete="off">
+                        <label for="title">Title</label>
+                        <input name="title" class="input" type="text" id="title" />
+
+                        <label for="author">Author</label>
+                        <input name="author" class="input" type="email" id="author" />
+
+                        <label for="year">Year</label>
+                        <input
+                            type="number"
+                            class="input"
+                            id="year"
+                            name="year"
+                            max="2020"
+                        />
+
+                        <button class="btn">Add Book</button>
+                    </form>
+                </section>
+            </main>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
