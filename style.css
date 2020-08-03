@@ -18,7 +18,7 @@ section {
 }
 
 .container {
-    width: 700px;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -127,7 +127,7 @@ tr:hover td {
         font-size: 0.8rem;
     }
     .container {
-        width: 300px;
+        width: 80%;
     }
     h1 {
         font-size: 2rem;
