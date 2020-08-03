@@ -18,7 +18,9 @@ section {
 }
 
 .container {
-    width: 50%;
+    /* It will not cross 600px */
+    width: 600px;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -125,9 +127,6 @@ tr:hover td {
 @media screen and (max-width: 740px) {
     body {
         font-size: 0.8rem;
-    }
-    .container {
-        width: 80%;
     }
     h1 {
         font-size: 2rem;
